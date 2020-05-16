@@ -8,7 +8,6 @@ It requires python and php to run this application. This requires proper local c
 -In terminal or Command prompt:
 ```
 pip3 install PySide2
-pip3 install QtGui
 pip3 install multiprocessing
 pip3 install clipboard
 ```
