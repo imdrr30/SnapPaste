@@ -43,7 +43,7 @@ ipconfig getifaddr en1 ///for wifi
 - Open any browser on any connected device on the same network and type this in addressbar:
 - Your computer's local IP and portnumber which yu already entered while starting the server
 - (i.e) `192.168.1.103:1234`
-![index](https://github.com/revanrohith/SnapPaste/raw/master/assets/index.jpg)
+![index](https://github.com/revanrohith/SnapPaste/raw/master/assets/index.png)
 ![filessent](https://github.com/revanrohith/SnapPaste/raw/master/assets/filessent.png)
 ### In browser
 - Choose `BROWSE` and the files you choose will direclty sent to Desktop of the PC.
