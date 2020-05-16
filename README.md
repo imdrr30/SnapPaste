@@ -5,7 +5,7 @@ This is for the people who wants to transfer their files from Phone to PC, PC to
 ## Usage
 It requires python and php installed to run this application. This also requires proper local connection.
 ### Install required libraries
-- Enter this is terminal or Command prompt to install required libraries:
+- Enter this in terminal or Command prompt to install required libraries:
 ```
 pip3 install PySide2
 pip3 install multiprocessing
