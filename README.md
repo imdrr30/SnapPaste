@@ -42,9 +42,9 @@ ipconfig getifaddr en1 ///for wifi
 ## How to sent files to PC ?
 - Open any browser on any connected device on the same network and type this in addressbar:
 - Your computer's local IP and portnumber which yu already entered while starting the server
-- (i.e) `192.168.1.103:1234`
-![index](https://github.com/revanrohith/SnapPaste/raw/master/assets/index.png)
+- (i.e)`192.168.1.103:1234`
 ![filessent](https://github.com/revanrohith/SnapPaste/raw/master/assets/filessent.png)
+![index](https://github.com/revanrohith/SnapPaste/raw/master/assets/index.png)
 ### In browser
 - Choose `BROWSE` and the files you choose will direclty sent to Desktop of the PC.
 - In `PASTE HERE` paste the clipboard contents of your phone. It will be immediately copied to PC's clipboard.
