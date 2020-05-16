@@ -1,7 +1,7 @@
 # SnapPaste
 Simple file sharing AirDrop Killer tool for PCs and other devices using python & JS. Also ClipShare, feature that allows user to share their clipboard across devices including images through local network.  Currently, This project is in beta.
 ## What is this for ?
-This for the people who wants to transfer their files from Phone to PC or PC to PC wirelessly through local network. This also allow you to paste image directly into PCs clipboard from phone's camera.
+This is for the people who wants to transfer their files from Phone to PC or PC to PC wirelessly through local network. This also allow you to paste image directly into PCs clipboard from phone's camera.
 ## Usage
 It requires python and php to run this application. This requires proper local connection.
 ### Install required libraries
