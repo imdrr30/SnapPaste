@@ -1,7 +1,7 @@
 # SnapPaste
 Simple file sharing AirDrop Killer tool for PCs and other devices using python & JS. Also ClipShare, feature that allows user to share their clipboard across devices including images through local network.  Currently, This project is in beta.
 ## What is this for ?
-This is for the people who wants to transfer their files from Phone to PC, PC to PC wirelessly through local network. This also allows users to paste image directly to PC's clipboard from Phone's camera.
+This is for the people who wants to transfer their files from Phone to PC, PC to PC wirelessly through local network. This also allows user to paste image directly to PC's clipboard from Phone's camera.
 ## Usage
 It requires python and php installed to run this application. This also requires proper local connection.
 ### Install required libraries
@@ -37,12 +37,11 @@ ipconfig getifaddr en1 #for wifi
 - Type `python3 main_win.py` for Windows.
 ![filehandler](https://github.com/revanrohith/SnapPaste/raw/master/assets/filehandler.png)
 ### Dont close either of the Windows
-- If you are running macOS or linux computer, then just enter `php -S 0.0.0.0:XXXX & python3 main_mac_linux.py` in terminal to run two processes in same window.
+- If you are running macOS or linux computer, then just enter `php -S 0.0.0.0:XXXX & python3 main_mac_linux.py` in terminal to run two processes in a window.
 ## How to sent files to PC ?
 ![index](https://github.com/revanrohith/SnapPaste/raw/master/assets/index.png)
 ![filessent](https://github.com/revanrohith/SnapPaste/raw/master/assets/filessent.png)
-- Open any browser on any connected device on the same network and type this in addressbar:
-- Your computer's local IP and portnumber which yu already entered while starting the server
+- Open Internet browser in connected device, make sure they are in same network and type your computer's local IP and portnumber you gave while starting the server
 - (i.e)`192.168.1.100:1234`
 ### In browser
 - `BROWSE`, the files you choose will be direclty sent to PC's Desktop Making it more accessible.
