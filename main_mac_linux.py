@@ -39,6 +39,4 @@ def trans():
 
 if __name__ == '__main__':
     print("Do not close this Window.")
-    p2=multiprocessing.Process(name='p2',target=trans)
-    p3=multiprocessing.Process(name='p3',target=serve)
     trans()
