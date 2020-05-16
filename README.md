@@ -19,9 +19,9 @@ ipconfig getifaddr en0 ///for lan
 ipconfig getifaddr en1 ///for wifi
 ```
 ### Windows
-- For Windows we have dedicated Standalone Application that can provide features what we always wanted
-- Download that Awesome Application
-### Still feeling like setting up it on own, then
+- For Windows we are buliding dedicated Standalone Application that can provide features what we always wanted
+- Untill then
+### Setup it on your own
 - Open cmd and type:
 `ipconfig`
 - Look for IPv4 address of your connection.
