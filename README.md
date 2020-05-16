@@ -44,9 +44,9 @@ ipconfig getifaddr en1 ///for wifi
 ![filessent](https://github.com/revanrohith/SnapPaste/raw/master/assets/filessent.png)
 - Open any browser on any connected device on the same network and type this in addressbar:
 - Your computer's local IP and portnumber which yu already entered while starting the server
-- (i.e)`192.168.1.103:1234`
+- (i.e)`192.168.1.100:1234`
 ### In browser
-- Choose `BROWSE` and the files you choose will direclty sent to Desktop of the PC.
+- Choose `BROWSE` and the files you choose will be direclty sent to PC's Desktop Making it more accessible.
 - In `PASTE HERE` paste the clipboard contents of your phone. It will be immediately copied to PC's clipboard.
 - In `CLIPBOARD BOX`. It actively displays the current content of PC's clipboard. Just Tap on that to copy it to the Phone's clipboard
 - Choose `CAPTURE`, It uses phone's camera to capture image and sent it directly to Desktop's Clipboard. Where you can paste that into any application. This is useful for the Documentation.
