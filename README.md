@@ -15,8 +15,8 @@ pip3 install clipboard
 ### macOS & linux
 Open terminal
 ```
-ipconfig getifaddr en0 ///for lan
-ipconfig getifaddr en1 ///for wifi
+ipconfig getifaddr en0 #for lan
+ipconfig getifaddr en1 #for wifi
 ```
 ### Windows
 - For Windows we are buliding dedicated Standalone Application that can provide features what we always wanted
