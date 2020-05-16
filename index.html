@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166785295-1"></script>
+		<script>
+ 		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+  		gtag('config', 'UA-166785295-1');
+		</script>
+
+		<meta charset="utf-8"/>
+		<title>Transfer to Desktop</title>
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
+		<link href="assets/css/style.css" rel="stylesheet" />
+	</head>
+
+	<body>
+
+		<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+			<div id="drop">
+				<a>Browse</a>
+				<input type="file" name="upl" multiple />
+			</div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+		<form id="upload" method="post" action="clipp.php" enctype="multipart/form-data">
+			<input type="text" id="dropp" name="textdata" onchange="form.submit()" Placeholder="PASTE HERE">
+		</form>
+		<form id="upload" method="post" enctype="multipart/form-data">
+			<div id="clippy" onclick='myFunction()' value="Stupid">Cipboardhere</div>
+		</form>
+		<form id="upload" method="post" action="mupload.php" enctype="multipart/form-data">
+			<div id="drop">
+				<a>capture</a>
+				<input type="file" name="upl" capture="camera" onchange="form.submit()" />
+			</div>
+		</form>
+		</form>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="assets/js/jquery.knob.js"></script>
+		<script src="assets/js/jquery.ui.widget.js"></script>
+		<script src="assets/js/jquery.iframe-transport.js"></script>
+		<script src="assets/js/jquery.fileupload.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="http://cdn.tutorialzine.com/misc/enhance/v1.js" async></script>
+		<script>
+			function populatePre(url) {
+				var xhr = new XMLHttpRequest();
+				xhr.onload = function () {
+					document.getElementById('clippy').textContent = this.responseText;
+				};
+				xhr.open('GET', url);
+				xhr.send();
+			}
+			populatePre('Clipboards/clippc.txt');
+		</script>
+		<script>
+			function myFunction() {
+			if (document.selection) {
+				var range = document.body.createTextRange();
+				range.moveToElementText(document.getElementById('clippy'));
+				range.select().createTextRange();
+				document.execCommand("copy");
+				alert("Copied")
+			} else if (window.getSelection) {
+				var range = document.createRange();
+				range.selectNode(document.getElementById('clippy'));
+				window.getSelection().addRange(range);
+				document.execCommand("copy");
+				alert("Copied")
+			}
+			} 
+		</script>
+
+	</body>
+</html>
