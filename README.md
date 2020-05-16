@@ -37,7 +37,7 @@ ipconfig getifaddr en1 #for wifi
 - Type `python3 main_win.py` for Windows.
 ![filehandler](https://github.com/revanrohith/SnapPaste/raw/master/assets/filehandler.png)
 ### Dont close either of the Windows
-- If you are running macOS or linux computer, then just enter `php -S 0.0.0.0:XXXX & python3 main_mac_linux.py` in terminal to run two processes in a window.
+- If you are running macOS or linux computer, then just enter `php -S 0.0.0.0:XXXX & python3 main_mac_linux.py` in terminal to run two processes in same window.
 ## How to sent files to PC ?
 ![index](https://github.com/revanrohith/SnapPaste/raw/master/assets/index.png)
 ![filessent](https://github.com/revanrohith/SnapPaste/raw/master/assets/filessent.png)
@@ -46,8 +46,8 @@ ipconfig getifaddr en1 #for wifi
 ### In browser
 ![clipsent](https://github.com/revanrohith/SnapPaste/raw/master/uploads/Clipsent.jpg)
 ![clipcopied](https://github.com/revanrohith/SnapPaste/raw/master/uploads/clipreceived.jpg)
-- `BROWSE`, the files you choose will be direclty sent to PC's Desktop Making it more accessible.
-- `PASTE HERE` paste the clipboard contents of your phone. It will be immediately copied to PC's clipboard.
+- `BROWSE`, the files you choose will be direclty sent to PC's Desktop making it more accessible.
+- `PASTE HERE` Paste the clipboard contents of your phone. It will be immediately copied to PC's clipboard.
 - `CLIPBOARD BOX`. It actively displays the current content of PC's clipboard. Just Tap on that to copy it to the Phone's clipboard
 - `CAPTURE`, It uses phone's camera to capture image and sent it directly to Desktop's Clipboard. Where you can paste that into any application.
 ### Transfer Speed
