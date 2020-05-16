@@ -2,30 +2,10 @@ import os
 import time
 from os.path import expanduser
 import shutil
-import multiprocessing
 import subprocess
 import clipboard
-import sys
-from PySide2 import QtWidgets, QtGui
 home = expanduser("~")
 a=1
-def exiter():
-    p2.terminate()
-    p3.terminate()
-    exit()
-
-class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
-    def __init__(self, icon, parent=None):
-        QtWidgets.QSystemTrayIcon.__init__(self, icon, parent)
-        self.setToolTip(f'SnapPaste')
-        menu = QtWidgets.QMenu(parent)
-        exit_ = menu.addAction("Type in Connected device's Browser:")
-        open_app = menu.addAction("At port :1111")
-        exit_ = menu.addAction("Exit")
-        exit_.triggered.connect(lambda: exiter())
-
-        menu.addSeparator()
-        self.setContextMenu(menu)
 
 def serve():
     os.system("php -S 0.0.0.0:1111")
@@ -62,11 +42,4 @@ if __name__ == '__main__':
     print("Do not close this Window.")
     p2=multiprocessing.Process(name='p2',target=trans)
     p3=multiprocessing.Process(name='p3',target=serve)
-    p2.start()
-    p3.start()
-    app = QtWidgets.QApplication(sys.argv)
-    w = QtWidgets.QWidget()
-    tray_icon = SystemTrayIcon(QtGui.QIcon("icon.png"), w)
-    tray_icon.show()
-    tray_icon.showMessage('Connected', "At Port:1111")
-    sys.exit(app.exec_())
+    trans()
