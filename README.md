@@ -44,11 +44,11 @@ ipconfig getifaddr en1 #for wifi
 - Open Internet browser in connected device, make sure they are in same network and type your computer's local IP and portnumber you gave while starting the server in addressbar
 - (i.e)`192.168.1.100:1234`
 ### In browser
+![clipsent](https://github.com/revanrohith/SnapPaste/raw/master/uploads/Clipsent.jpg)
+![clipcopied](https://github.com/revanrohith/SnapPaste/raw/master/uploads/clipreceived.jpg)
 - `BROWSE`, the files you choose will be direclty sent to PC's Desktop Making it more accessible.
 - `PASTE HERE` paste the clipboard contents of your phone. It will be immediately copied to PC's clipboard.
 - `CLIPBOARD BOX`. It actively displays the current content of PC's clipboard. Just Tap on that to copy it to the Phone's clipboard
 - `CAPTURE`, It uses phone's camera to capture image and sent it directly to Desktop's Clipboard. Where you can paste that into any application.
-![clipsent](https://github.com/revanrohith/SnapPaste/raw/master/uploads/Clipsent.jpg)
-![clipcopied](https://github.com/revanrohith/SnapPaste/raw/master/uploads/clipreceived.jpg)
 ### Transfer Speed
 - Transfer Speed is directly proportional to the distance between the modem and the devices(Connectivity Strength).
