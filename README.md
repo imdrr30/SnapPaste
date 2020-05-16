@@ -21,7 +21,7 @@ ipconfig getifaddr en1 ///for wifi
 ### Windows
 - For Windows we are buliding dedicated Standalone Application that can provide features what we always wanted
 - Untill then
-### Setup it on your own
+### Set it up on your own
 - Open cmd and type:
 `ipconfig`
 - Look for IPv4 address of your connection.
