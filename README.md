@@ -1,11 +1,11 @@
 # SnapPaste
 Simple file sharing AirDrop Killer tool for PCs and other devices using python & JS. Also ClipShare, feature that allows user to share their clipboard across devices including images through local network.  Currently, This project is in beta.
 ## What is this for ?
-This is for the people who wants to transfer their files from Phone to PC or PC to PC wirelessly through local network. This also allow you to paste image directly into PCs clipboard from phone's camera.
+This is for the people who wants to transfer their files from Phone to PC, PC to PC wirelessly through local network. This also allows users to paste image directly to PC's clipboard from Phone's camera.
 ## Usage
-It requires python and php to run this application. This requires proper local connection.
+It requires python and php installed to run this application. This also requires proper local connection.
 ### Install required libraries
-- In terminal or Command prompt:
+- Enter this is terminal or Command prompt to install required libraries:
 ```
 pip3 install PySide2
 pip3 install multiprocessing
@@ -19,8 +19,7 @@ ipconfig getifaddr en0 #for lan
 ipconfig getifaddr en1 #for wifi
 ```
 ### Windows
-- For Windows we are buliding dedicated Standalone Application that can provide features what we always wanted
-- Untill then
+- For Windows we are buliding dedicated Standalone Application. Untill then, set it up by following the instructions 
 ### Set it up on your own
 - Open cmd and type:
 `ipconfig`
@@ -38,7 +37,7 @@ ipconfig getifaddr en1 #for wifi
 - Type `python3 main_win.py` for Windows.
 ![filehandler](https://github.com/revanrohith/SnapPaste/raw/master/assets/filehandler.png)
 ### Dont close either of the Windows
-- In macOS and linux type `php -S 0.0.0.0:XXXX & python3 main_mac_linux.py` to run the process in same window.
+- If you are running macOS or linux computer, then just enter `php -S 0.0.0.0:XXXX & python3 main_mac_linux.py` in terminal to run two processes in same window.
 ## How to sent files to PC ?
 ![index](https://github.com/revanrohith/SnapPaste/raw/master/assets/index.png)
 ![filessent](https://github.com/revanrohith/SnapPaste/raw/master/assets/filessent.png)
@@ -46,11 +45,11 @@ ipconfig getifaddr en1 #for wifi
 - Your computer's local IP and portnumber which yu already entered while starting the server
 - (i.e)`192.168.1.100:1234`
 ### In browser
-- Choose `BROWSE` and the files you choose will be direclty sent to PC's Desktop Making it more accessible.
-- In `PASTE HERE` paste the clipboard contents of your phone. It will be immediately copied to PC's clipboard.
-- In `CLIPBOARD BOX`. It actively displays the current content of PC's clipboard. Just Tap on that to copy it to the Phone's clipboard
-- Choose `CAPTURE`, It uses phone's camera to capture image and sent it directly to Desktop's Clipboard. Where you can paste that into any application. This is useful for the Documentation.
+- `BROWSE`, the files you choose will be direclty sent to PC's Desktop Making it more accessible.
+- `PASTE HERE` paste the clipboard contents of your phone. It will be immediately copied to PC's clipboard.
+- `CLIPBOARD BOX`. It actively displays the current content of PC's clipboard. Just Tap on that to copy it to the Phone's clipboard
+- `CAPTURE`, It uses phone's camera to capture image and sent it directly to Desktop's Clipboard. Where you can paste that into any application. This is useful for the Documentation.
 ![clipsent](https://github.com/revanrohith/SnapPaste/raw/master/uploads/Clipsent.jpg)
 ![clipcopied](https://github.com/revanrohith/SnapPaste/raw/master/uploads/clipreceived.jpg)
 ### Transfer Speed
-- Transfer Speed is directly propostional to the distance between the modem and the devices(Connectivity Strength).
+- Transfer Speed is directly proportional to the distance between the modem and the devices(Connectivity Strength).
