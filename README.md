@@ -3,7 +3,7 @@ Simple file sharing AirDrop Killer tool for PCs and other devices using python &
 ## What is this for ?
 This is for the people who wants to transfer their files from Phone to PC, PC to PC wirelessly through local network. This also allows user to paste image directly to PC's clipboard from Phone's camera.
 ## Install Application
-- We have portable Application for both Windows & macOS runs fully functional without installation.
+We have portable Application for both Windows & macOS runs fully functional without installation.
 - [Download Now](https://snappaste.github.io/app)
 ## Instructions for macOS
 - macOS additionally required php to run.
