@@ -2,7 +2,16 @@
 Simple file sharing AirDrop Killer tool for PCs and other devices using python & JS. Also ClipShare, feature that allows user to share their clipboard across devices including images through local network.  Currently, This project is in beta.
 ## What is this for ?
 This is for the people who wants to transfer their files from Phone to PC, PC to PC wirelessly through local network. This also allows user to paste image directly to PC's clipboard from Phone's camera.
-## Usage
+## Install Application
+- We have portable Application for both Windows & macOS runs fully functional without installation.
+- [Download Now](https://snappaste.github.io/app)
+## Instructions for macOS
+- macOS additionally required php to run.
+- If php is not installed, install it via homebrew.
+- `brew install php@7.2`
+- `php.ini` must also be configured to receive files with larger size
+- Paste `php.ini` in `/etc/`
+## Usage via sourcecode
 It requires python and php installed to run this application. This also requires proper local connection.
 ### Install required libraries
 - Enter this in terminal or Command prompt to install required libraries:
@@ -18,8 +27,6 @@ Open terminal
 ipconfig getifaddr en0 #for lan
 ipconfig getifaddr en1 #for wifi
 ```
-### Windows
-- For Windows we are buliding dedicated Standalone Application. Untill then, set it up by following the instructions 
 ### Set it up on your own
 - Open cmd and type:
 `ipconfig`
