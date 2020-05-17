@@ -10,7 +10,7 @@ This is for the people who wants to transfer their files from Phone to PC, PC to
 - If php is not installed, install it via homebrew.
 - `brew install php@7.2`
 - `php.ini` must also be configured to receive files with larger size
-- Paste `php.ini` in `/etc/`
+- Paste `php.ini` in from sourcecode to `/etc/`
 ## Usage via sourcecode
 It requires python and php installed to run this application. This also requires proper local connection.
 ### Install required libraries
