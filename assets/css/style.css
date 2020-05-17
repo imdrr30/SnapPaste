@@ -10,11 +10,11 @@
 
 
 html{
-    background-color:#ebebec;
+    background-color:blue;
 
-    background-image:-webkit-radial-gradient(center, #ebebec, #b4b4b4);
-    background-image:-moz-radial-gradient(center, #ebebec, #b4b4b4);
-    background-image:radial-gradient(center, #ebebec, #b4b4b4);
+    background-image:-webkit-radial-gradient(center, blue, #b4b4b4);
+    background-image:-moz-radial-gradient(center, blue, #b4b4b4);
+    background-image:radial-gradient(center, blue, #b4b4b4);
 
     min-height:900px;
 }
@@ -76,7 +76,7 @@ section, footer, header, aside{
 
 #dropp{
     background-color: #2E3134;
-    padding: 50px 150px;
+    padding: 50px 11.5%;
     margin-bottom: 30px;
     border: 20px solid rgba(0, 0, 0, 0);
     border-radius: 3px;
