@@ -9,8 +9,8 @@ We have portable Application for both Windows & macOS runs fully functional with
 - macOS additionally required php to run.
 - If php is not installed, install it via homebrew.
 - `brew install php@7.2`
-- `php.ini` must also be configured to receive files with larger size
-- Paste `php.ini` in from sourcecode to `/etc/`
+- `php.ini` must be configured to receive files with larger size
+- Paste `php.ini` from sourcecode to `/etc/`
 ## Usage via sourcecode
 It requires python and php installed to run this application. This also requires proper local connection.
 ### Install required libraries
