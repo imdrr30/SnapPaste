@@ -4,29 +4,14 @@ import socket
 from os.path import expanduser
 import shutil
 import multiprocessing
+from tkinter import *
 import clipboard
-import sys
-from PySide2 import QtWidgets, QtGui
+import pyqrcode
+import webbrowser
+import validators
+from PIL import ImageTk, Image
 home = expanduser("~")
 a=1
-def exiter():
-    p2.terminate()
-    p3.terminate()
-    exit()
-
-class SystemTrayIcon(QtWidgets.QSystemTrayIcon):
-    def __init__(self, icon, parent=None):
-        QtWidgets.QSystemTrayIcon.__init__(self, icon, parent)
-        self.setToolTip(f'SnapPaste')
-        menu = QtWidgets.QMenu(parent)
-        exit_ = menu.addAction("Type in Connected device's Browser:")
-        open_app = menu.addAction("{}:1111".format(IPAddr2))
-        exit_ = menu.addAction("Exit")
-        exit_.triggered.connect(lambda: exiter())
-
-        menu.addSeparator()
-        self.setContextMenu(menu)
-
 def serve():
     os.system("php -S 0.0.0.0:1111")
 def trans():
@@ -34,16 +19,21 @@ def trans():
         try:
             clipclr = open("Clipboards/clipcl.txt","r")
             try:
-                clipboard.copy(clipclr.read())
+                a=clipclr.read()
+                if validators.url(a):
+                    webbrowser.open(a,new=2)
+                clipboard.copy(a)
             except TypeError:
                 a=1
             clipclr.close()
             os.remove("Clipboards/clipcl.txt")
         except FileNotFoundError:
             a=0
-        f2 = open(r"Clipboards/clippc.txt", "w+")
-        f2.write(clipboard.paste())
-        f2.close()
+        f1 = open("Clipboards/clippc.txt","r")
+        if clipboard.paste()!=f1.read():
+            f2 = open(r"Clipboards/clippc.txt", "w+")
+            f2.write(clipboard.paste())
+            f2.close()
         if os.path.isfile("uploads/toClip.jpg"):
             os.system("clip.exe clipboard copyimage uploads/toClip.jpg")
             os.remove("uploads/toClip.jpg")
@@ -93,14 +83,25 @@ if __name__ == '__main__':
     hostname = socket.gethostname()
     IPAddr2 = socket.gethostbyname(hostname)
     multiprocessing.freeze_support()
-    print("Do not close this Window.")
+    print("Do not close the Window.")
+    print("Scan QRCode with Any QRCode scanning App.")
     p2=multiprocessing.Process(name='p2',target=trans)
     p3=multiprocessing.Process(name='p3',target=ntwrkmang)
     p2.start()
     p3.start()
-    app = QtWidgets.QApplication(sys.argv)
-    w = QtWidgets.QWidget()
-    tray_icon = SystemTrayIcon(QtGui.QIcon("icon.png"), w)
-    tray_icon.show()
-    tray_icon.showMessage('Connected', "{}:1111".format(IPAddr2))
-    sys.exit(app.exec_())
+    qr="http://"+IPAddr2+":1111"
+    url = pyqrcode.create(qr)
+    url.png('myqrcode.png', scale=6)
+    root = Tk()
+    root.iconbitmap("icon.ico")
+    root.geometry('300x500')
+    root['bg']='purple'
+    root.title("SnapPaste")
+    label = Label(root, text=IPAddr2+":1111",fg="yellow",bg="purple",font=("Monova", 20))
+    label.pack(expand="yes")
+    img = ImageTk.PhotoImage(Image.open("myqrcode.png"))
+    panel = Label(root, image=img)
+    panel.pack(side="bottom", expand="yes")
+    root.mainloop()
+    os.system("taskkill /F /IM php.exe")
+    os.system("taskkill /F /IM SnapPaste.exe")
