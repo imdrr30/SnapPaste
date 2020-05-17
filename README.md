@@ -11,6 +11,7 @@ We have portable Application for both Windows & macOS runs fully functional with
 - In terminal enter `brew install php@7.2`
 - `php.ini` must be configured to receive files with larger size
 - Paste `php.ini` from sourcecode to `/etc/`
+- Move the App to the application folder to run.
 ## Usage via sourcecode
 It requires python and php installed to run this application. This also requires proper local connection.
 ### Install required libraries
