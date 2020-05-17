@@ -6,9 +6,9 @@ This is for the people who wants to transfer their files from Phone to PC, PC to
 We have portable Application for both Windows & macOS runs fully functional without installation.
 - [Download](https://snappaste.github.io/app)
 ## Instructions for macOS
-- macOS additionally required php to run.
+- macOS additionally requires php to run.
 - If php is not installed, install it via homebrew.
-- `brew install php@7.2`
+- In terminal enter `brew install php@7.2`
 - `php.ini` must be configured to receive files with larger size
 - Paste `php.ini` from sourcecode to `/etc/`
 ## Usage via sourcecode
