@@ -45,6 +45,7 @@ h1 {
 
 
 #upload{
+    overflow: scroll;
     font-family:'PT Sans Narrow', sans-serif;
     background-color:#f9f9f9;
     width:30%;
