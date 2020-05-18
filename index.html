@@ -1,3 +1,5 @@
+<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
 <!DOCTYPE html>
 <html>
 
@@ -15,11 +17,13 @@
 		<title>Transfer to Desktop</title>
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel='stylesheet' />
 		<link href="assets/css/style.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
 
 	<body>
 
-		<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">
+		<form id="upload" style="float:left; height:35%; position:relative; left:12%; top:2px;" method="post" action="upload.php" enctype="multipart/form-data">
+			<img src="assets/img/upl.png" style="float:left ; height:35%; position:relative; left:20%; top:2px;">
 			<div id="drop">
 				<a>Browse</a>
 				<input type="file" name="upl" multiple />
@@ -30,13 +34,16 @@
 			</ul>
 
 		</form>
-		<form id="upload" method="post" action="clipp.php" enctype="multipart/form-data">
-			<input type="text" id="dropp" name="textdata" onchange="form.submit()" Placeholder="PASTE HERE">
+		<form id="upload" style="float:right ; height:35%; position:relative; right:12%; top:2px;" method="post" action="clipp.php" enctype="multipart/form-data">
+			<img src="assets/img/clip.png" style="float:right ; height:30%; position:relative; right:20%; top:2px;">
+			<input type="text" id="dropp" name="textdata" onchange="form.submit()" autocomplete="off" Placeholder="PASTE HERE">
 		</form>
-		<form id="upload" method="post" enctype="multipart/form-data">
+		<form id="upload" style="float:left; height:35%; position:relative; left:12%; top:10px;" method="post" enctype="multipart/form-data">
+			<img src="assets/img/clipcl.png" style="float:left ; height:30%; position:relative; left:20%; top:2px;">
 			<div id="clippy" onclick='myFunction()' value="Stupid">Cipboardhere</div>
 		</form>
-		<form id="upload" method="post" action="mupload.php" enctype="multipart/form-data">
+		<form id="upload" style="float:right; height:35%; position:relative; right:12%; top:10px;" method="post" action="mupload.php" enctype="multipart/form-data">
+			<img src="assets/img/cam.png" style="float:right ; height:35%; position:relative; right:20%; top:2px;">
 			<div id="drop">
 				<a>capture</a>
 				<input type="file" name="upl" capture="camera" onchange="form.submit()" />
