@@ -18,7 +18,8 @@ It requires python and php installed to run this application. This also requires
 ### Install required libraries
 - Enter this in terminal or Command prompt to install required libraries:
 ```
-pip3 install PySide2
+pip3 install pyqrcode
+pip3 install validators
 pip3 install multiprocessing
 pip3 install clipboard
 ```
