@@ -8,8 +8,11 @@ We have portable Application for both Windows & macOS runs fully functional with
 ![appshot](https://github.com/revanrohith/SnapPaste/raw/master/assets/appshot.png)
 ## Instructions for macOS
 - `php.ini` must be configured to receive files with larger size
-- Paste `php.ini` from sourcecode to `/etc/`
-- Move the App to the application folder to run.
+- Simply paster the following command in terminal and enter password:
+```
+echo $'file_uploads = On\npost_max_size = 4096M\nupload_max_filesize = 4096M\nmax_file_uploads = 500' >php.ini
+sudo mv php.ini /private/etc
+```
 ## Usage via sourcecode
 It requires python and php installed to run this application. This also requires proper local connection.
 ### Install required libraries
