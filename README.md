@@ -5,6 +5,7 @@ This is for the people who wants to transfer their files from Phone to PC, PC to
 ## Install Application
 We have portable Application for both Windows & macOS runs fully functional without installation.
 - [Download](https://snappaste.github.io/app)
+![appshot](https://github.com/revanrohith/SnapPaste/raw/master/assets/appshot.png)
 ## Instructions for macOS
 - macOS additionally requires php to run.
 - If php is not installed, install it via homebrew.
