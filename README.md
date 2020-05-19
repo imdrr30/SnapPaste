@@ -5,7 +5,7 @@ This is for the people who wants to transfer their files from Phone to PC, PC to
 ## Install Application
 We have portable Application for both Windows & macOS runs fully functional without installation.
 - [Download](https://snappaste.github.io/app)
-![appshot](https://github.com/revanrohith/SnapPaste/raw/master/assets/appshot.png)
+![appshot](https://github.com/revanrohith/SnapPaste/raw/master/assets/appsmac.png)
 ## Instructions for macOS
 - `php.ini` must be configured to receive files with larger size
 - Just paste the following in terminal and enter password to configure:
