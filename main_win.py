@@ -9,11 +9,12 @@ import clipboard
 import pyqrcode
 import webbrowser
 import validators
-from PIL import ImageTk, Image
 home = expanduser("~")
 a=1
+def showcon(addr):
+    webbrowser.open("{}/web/index.html".format(addr),new=2)
 def serve():
-    os.system("php -S 0.0.0.0:1111")
+    os.system("php -S 0.0.0.0:1234")
 def trans():
     while True:
         try:
@@ -89,19 +90,20 @@ if __name__ == '__main__':
     p3=multiprocessing.Process(name='p3',target=ntwrkmang)
     p2.start()
     p3.start()
-    qr="http://"+IPAddr2+":1111"
+    qr="http://"+IPAddr2+":1234"
     url = pyqrcode.create(qr)
-    url.png('myqrcode.png', scale=6)
+    url.png('web/images/qr.png', scale=6)
     root = Tk()
+    lab = Label(root, text="Serving at: {}".format(qr))
+    lab.pack()
     root.iconbitmap("icon.ico")
-    root.geometry('300x500')
-    root['bg']='purple'
+    root.geometry('250x50')
     root.title("SnapPaste")
-    label = Label(root, text=IPAddr2+":1111",fg="yellow",bg="purple",font=("Monova", 20))
-    label.pack(expand="yes")
-    img = ImageTk.PhotoImage(Image.open("myqrcode.png"))
-    panel = Label(root, image=img)
-    panel.pack(side="bottom", expand="yes")
+    def showcon1():
+        showcon(qr)
+    showcon(qr)
+    button = Button(root, text="Show QRCode to Connect", command=showcon1)
+    button.pack()
     root.mainloop()
     os.system("taskkill /F /IM php.exe")
     os.system("taskkill /F /IM SnapPaste.exe")

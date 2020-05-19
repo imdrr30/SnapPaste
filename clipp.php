@@ -7,4 +7,6 @@ $fp = fopen('Clipboards/clipcl.txt', 'a');
 fwrite($fp, $data);
 fclose($fp);
 }
+sleep(1);
+header("Location: index.html");
 ?>

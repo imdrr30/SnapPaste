@@ -11,6 +11,8 @@ import webbrowser
 import validators
 home = expanduser("~")
 a=1
+def showcon(addr):
+    webbrowser.open("{}/web/index.html".format(addr),new=2)
 def serve():
     os.system("php -S 0.0.0.0:1234")
 def trans():
@@ -52,8 +54,11 @@ def ntwrkmang():
     printed=1
     p1 = multiprocessing.Process(name='p1', target=serve)
     while True:
-        IPAddr=os.popen("ipconfig getifaddr en1").read()
+        IPAddr = os.popen("ipconfig getifaddr en0").read()
         IPAddr = IPAddr[:-1]
+        if IPAddr == '':
+            IPAddr = os.popen("ipconfig getifaddr en1").read()
+            IPAddr = IPAddr[:-1]
         if str(IPAddr)!=previp:
             printed=1
             previp=str(IPAddr)
@@ -79,8 +84,12 @@ def ntwrkmang():
 
 
 if __name__ == '__main__':
-    IPAddr2=os.popen("ipconfig getifaddr en1").read()
+    IPAddr2=os.popen("ipconfig getifaddr en0").read()
     IPAddr2 = IPAddr2[:-1]
+    if IPAddr2=='':
+        IPAddr2 = os.popen("ipconfig getifaddr en1").read()
+        IPAddr2 = IPAddr2[:-1]
+    print(IPAddr2)
     multiprocessing.freeze_support()
     print("Do not close the Window.")
     print("Scan QRCode with Any QRCode scanning App.")
@@ -91,20 +100,20 @@ if __name__ == '__main__':
     qr="http://"+str(IPAddr2)+":1234"
     print(qr)
     url = pyqrcode.create(qr)
-    url.png('myqrcode.png', scale=6)
+    url.png('web/images/qr.png', scale=6)
     root = Tk()
+    lab = Label(root,text="Serving at: {}".format(qr))
+    lab.pack()
     p1 = PhotoImage(file='icon.png')
-
-
     root.iconphoto(False, p1)
-    root.geometry('300x500')
-    root['bg']='purple'
+    root.geometry('250x50')
+    root['bg']='white'
     root.title("SnapPaste")
-    label = Label(root, text=IPAddr2+":1234",fg="yellow",bg="purple",font=("Monova", 20))
-    label.pack(expand="yes")
-    img = PhotoImage(file="myqrcode.png")
-    panel = Label(root, image=img)
-    panel.pack(side="bottom", expand="yes")
+    def showcon1():
+        showcon(qr)
+    showcon(qr)
+    button= Button(root,text="Show QRCode",command=showcon1)
+    button.pack()
     root.mainloop()
     os.system("killall php")
     os.system("killall SnapPaste")
