@@ -15,8 +15,8 @@ sudo mv php.ini /private/etc
 ```
 ## Usage via sourcecode
 It requires python and php installed to run this application. This also requires proper local connection.
-### Install required libraries
-- Enter this in terminal or Command prompt to install required libraries:
+### Install Dependencies
+- Enter this in terminal or Command prompt to install Dependencies:
 ```
 pip3 install pyqrcode
 pip3 install validators
