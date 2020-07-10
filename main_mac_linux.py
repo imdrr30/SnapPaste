@@ -84,6 +84,7 @@ def ntwrkmang():
 
 
 if __name__ == '__main__':
+    #starts here
     IPAddr2=os.popen("ipconfig getifaddr en0").read()
     IPAddr2 = IPAddr2[:-1]
     if IPAddr2=='':
